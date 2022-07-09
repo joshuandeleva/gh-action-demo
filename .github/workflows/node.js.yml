@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'node'
+        cache: 'npm'
     - run: node i
     - run: node run build --if-present
     - run: node test
